@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox alignment="TOP_CENTER" maxHeight="480.0" maxWidth="470.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="250.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="221.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="100.0" text="Логин:">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="100.0" text="Пароль:">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="tfLogin" prefHeight="25.0" prefWidth="66.0" promptText="Login">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfPassword" promptText="Password" scaleShape="false">
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnConnect" mnemonicParsing="false" onAction="#connect" text="Подключиться" />
+      <TextField fx:id="tfConnect" alignment="CENTER" editable="false" maxWidth="180.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" text="Вы не подключены">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <AnchorPane prefHeight="216.0" prefWidth="470.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="229.0" prefWidth="470.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="40.0">
+                     <children>
+                        <Label text="1:">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="2:">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="3">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="4">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="5">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="40.0">
+                     <children>
+                        <TextField fx:id="tfURL1" maxWidth="175.0" minWidth="150.0" prefHeight="25.0" prefWidth="175.0" promptText="URL" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfURL2" promptText="URL">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfURL3" promptText="URL">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfURL4" promptText="URL">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfURL5" promptText="URL">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="60.0">
+                     <children>
+                        <Button fx:id="btnStart1" mnemonicParsing="false" onAction="#startMonitor" prefHeight="25.0" prefWidth="52.0" text="Start">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStart2" mnemonicParsing="false" onAction="#startMonitor" prefWidth="52.0" text="Start">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStart3" mnemonicParsing="false" onAction="#startMonitor" prefWidth="52.0" text="Start">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStart4" mnemonicParsing="false" onAction="#startMonitor" prefWidth="52.0" text="Start">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStart5" mnemonicParsing="false" onAction="#startMonitor" prefWidth="52.0" text="Start">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="62.0">
+                     <children>
+                        <Button fx:id="btnStop1" mnemonicParsing="false" onAction="#stopMonitor" prefHeight="25.0" prefWidth="52.0" text="Stop">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStop2" mnemonicParsing="false" onAction="#stopMonitor" prefWidth="52.0" text="Stop">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStop3" mnemonicParsing="false" onAction="#stopMonitor" prefWidth="52.0" text="Stop">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStop4" mnemonicParsing="false" onAction="#stopMonitor" prefWidth="52.0" text="Stop">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnStop5" mnemonicParsing="false" onAction="#stopMonitor" prefWidth="52.0" text="Stop">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="120.0">
+                     <children>
+                        <TextField fx:id="tfStatus1" alignment="CENTER" editable="false" maxWidth="175.0" minWidth="115.0" prefHeight="25.0" prefWidth="115.0" promptText="Статус">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfStatus2" alignment="CENTER" editable="false" maxWidth="175.0" minWidth="115.0" prefHeight="25.0" prefWidth="115.0" promptText="Статус">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfStatus3" alignment="CENTER" editable="false" maxWidth="175.0" minWidth="115.0" prefHeight="25.0" prefWidth="115.0" promptText="Статус">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfStatus4" alignment="CENTER" editable="false" maxWidth="175.0" minWidth="115.0" prefHeight="25.0" prefWidth="115.0" promptText="Статус">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfStatus5" alignment="CENTER" editable="false" maxWidth="175.0" minWidth="115.0" prefHeight="25.0" prefWidth="115.0" promptText="Статус">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
